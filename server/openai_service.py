@@ -122,13 +122,6 @@ async def generate_self_assessment(topic: str):
     return result
 
 
-
-
-def get_embedding(text: str, model: str = "text-embedding-ada-002"):
-    response = openai.Embedding.create(input=[text], model=model)
-    embedding = response["data"][0]["embedding"]
-    return np.array(embedding)
-
 def get_embedding(text: str, model: str = "text-embedding-ada-002") -> np.ndarray:
     response = client.embeddings.create(
         input=[text],
