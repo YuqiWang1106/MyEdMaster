@@ -1,0 +1,122 @@
+.container-fluid{
+    height: 100vh;
+    overflow-y: visible;
+}
+
+/* navbar */
+.nav-part{
+    border-bottom-color: rgb(151, 151, 151);
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+
+.navitem1{  
+    display:flex;
+    align-items:center;
+}
+
+.navitem2{
+    /* background-color: rgb(218, 179, 24); */
+}
+
+.navitem3{
+    /* background-color: rgb(235, 35, 148); */
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+}
+
+.list-ic{
+    fill: #c4c2be;
+}
+
+/* main-content part */
+.main-content-part{
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left:5px;
+    margin-right: 5px;
+    column-gap: 30pt;
+}
+
+
+.left-side{
+    margin-top:10px;
+    margin-bottom:20px;
+    border-width:1px;
+    border-style:solid;
+    border-color:#c4c2be;
+    background-color:rgb(240,240,242);
+    padding-left:30px;
+    border-radius:20px;
+    padding-right:30px;
+}
+
+.right-side{
+    margin-top:10px;
+    margin-bottom:20px;
+    border-width:1px;
+    border-style:solid;
+    border-color:#c4c2be;
+    background-color:rgb(240,240,242);
+    padding-left:30px;
+    border-radius:20px;
+    
+}
+    
+
+.left-side h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.left-side-text{
+    overflow-y: scroll;
+    height:75vh;
+}
+
+.right-side h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.rs-text1{
+    margin-bottom:3px;
+    font-size:16px;
+    font-weight:800;
+}
+
+.rs-text2{
+    margin-top:0px;
+    margin-bottom:15px;
+    font-size:14px;
+    color: rgb(133, 133, 133);
+}
+
+.assess-input1, .assess-input2, .assess-input3, .assess-input4, .assess-input5{
+    margin-bottom: 5px;
+}
+
+
+.input-group textarea{
+    height:50px;
+}
+
+.input-group-text{
+    width:100px;
+    display: flex;
+    justify-content: center;
+    font-size:17px;
+    font-weight:500;
+}
+
+.submit{
+    margin-bottom:10px;
+}
