@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/template.css";
 import img1 from "../pic/img1.svg";
 
 function Template_Page() {
+  const handleSubmit = async () => {
+  const topic = document.querySelector(".assess-input1 textarea").value;
+  const facts = document.querySelector(".assess-input2 textarea").value;
+  const strategies = document.querySelector(".assess-input3 textarea").value;
+  const procedures = document.querySelector(".assess-input4 textarea").value;
+  const rationales = document.querySelector(".assess-input5 textarea").value;
+  
+    await fetch("http://localhost:8000/generate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ topic, user: { facts, strategies, procedures, rationales } }),
+    });
+    
+    console.log("Topic submitted to backend.");
+  };
+  
+
   return (
     <div className="container-fluid">
       <div className="row nav-part">
@@ -191,7 +210,7 @@ function Template_Page() {
           </div>
 
           <div className="button text-end">
-          <button type="button" class="btn btn-primary submit">
+          <button type="button" class="btn btn-primary submit" onClick={handleSubmit}>
               Submit
             </button>
           </div>
